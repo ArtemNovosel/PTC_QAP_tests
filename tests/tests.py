@@ -1,10 +1,5 @@
-import time
-
 import pytest
-from selenium.webdriver.common.by import By
-
 from auth_page import AuthPageHelper
-from base_page import BasePage
 from forgot_pass_page import ForgPassPageHelper
 from register_page import RegisterPageHelper
 from user_page import UserPagesHelper
@@ -47,8 +42,6 @@ def test_auth_tabs(browser, lokator, message):
 
 # наличие и функционирование кнопок авторизации через соцсети
 '''БАГ авторизация с помощью яндекс открывается только через дабл-клик по кнопке'''
-
-
 @pytest.mark.parametrize("network, url",
                          [(AuthPageHelper.click_VK, 'vk.com'), (AuthPageHelper.click_Ok, 'connect.ok.ru'),
                           (AuthPageHelper.click_Google, 'google.com'), (AuthPageHelper.click_Mail, 'mail.ru'),
