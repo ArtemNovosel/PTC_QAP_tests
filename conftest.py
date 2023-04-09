@@ -8,12 +8,12 @@ from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
 
 BASE_URL = 'https://b2c.passport.rt.ru/'
-EMAIL = 'a*'
-PHONE = '902*'
-LOGIN = 'rtkid_16*'
-PASSWORD_EMAIL = 'I*'
-PASSWORD_PHONE = 'I*'
-PASSWORD_LOGIN = 'I*'
+EMAIL = 'arteimn@mail.ru'
+PHONE = '9024099791'
+LOGIN = 'rtkid_1679990188472'
+PASSWORD_EMAIL = 'Intqap1032'
+PASSWORD_PHONE = 'INTqap1032'
+PASSWORD_LOGIN = 'INTqap1032'
 
 
 @pytest.fixture(scope='session')
